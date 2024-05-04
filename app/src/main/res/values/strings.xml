@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">rugandroll</string>
+    <string name="app_name">Rug And Roll</string>
+    <string name="username">Felhasználónév</string>
+    <string name="password">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="signup">Regisztráció</string>
+    <string name="email">E-Mail</string>
+    <string name="passwordAgain">Jelszó újra</string>
+    <string name="cancel">Mégsem</string>
+    <string name="phone">Telefonszám</string>
+    <string-array name="phoneModes">
+        <item>Otthoni</item>
+        <item>Munkahelyi</item>
+        <item>Mobil</item>
+        <item>Egyéb</item>
+    </string-array>
 </resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "417963510370",
+    "project_id": "szte-mobilalk",
+    "storage_bucket": "szte-mobilalk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417963510370:android:f9cdfda75ee34acb6d5f3b",
+        "android_client_info": {
+          "package_name": "com.example.rugandroll"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417963510370-kh8euae5u8o9kgns7ln916c166uirrb2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rugandroll",
+            "certificate_hash": "97e6d6a07c0c0d2de278eaa569bcb51dcab17c98"
+          }
+        },
+        {
+          "client_id": "417963510370-dijh3gsp7567ps0dhohm8ue6lbq0ogh0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCZtr0Z3cAvw1XaeD_a32ezzmoeyodoik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417963510370-dijh3gsp7567ps0dhohm8ue6lbq0ogh0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
