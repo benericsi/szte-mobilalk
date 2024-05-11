@@ -8,10 +8,34 @@
     <string name="passwordAgain">Jelszó újra</string>
     <string name="cancel">Mégsem</string>
     <string name="phone">Telefonszám</string>
-    <string-array name="phoneModes">
-        <item>Otthoni</item>
-        <item>Munkahelyi</item>
-        <item>Mobil</item>
-        <item>Egyéb</item>
+    <string name="item_placeholder">Cím</string>
+    <string name="item_info_placeholder">Leírás</string>
+    <string name="item_price_placeholder">99999</string>
+    <string name="btn_buy">Kosárba</string>
+
+    <string-array name="shopping_item_names">
+        <item>CONCRETE S Modern 80 x 200 cm</item>
+        <item>CHIC Rusty L Vintage 160 x 230 cm</item>
     </string-array>
+
+    <string-array name="shopping_item_desc">
+        <item>szürke-sárga Absztrakt mintás futószőnyeg</item>
+        <item>szürke-narancs Antikolt mintás szőnyeg</item>
+    </string-array>
+
+    <string-array name="shopping_item_prices">
+        <item>39400 Ft</item>
+        <item>99400 Ft</item>
+    </string-array>
+
+    <array name="shopping_item_ratings">
+        <item>4.5</item>
+        <item>4.0</item>
+    </array>
+
+    <array name="shopping_item_images">
+        <item>@drawable/concrete_s_80x200</item>
+        <item>@drawable/chic_rusty_l_160x230</item>
+    </array>
+
 </resources>

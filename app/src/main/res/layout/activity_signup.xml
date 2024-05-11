@@ -80,37 +80,11 @@
         android:layout_marginRight="48dp"
         />
 
-    <EditText
-        android:id="@+id/phoneEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="@string/phone"
-        android:inputType="phone"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@id/passwordAgainEditText"
-        android:layout_marginLeft="48dp"
-        android:layout_marginRight="48dp"
-        />
-
-    <Spinner
-        android:id="@+id/phoneSpinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_below="@id/phoneEditText"
-        android:layout_marginLeft="48dp"
-        android:layout_marginRight="48dp"
-
-        />
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@id/phoneSpinner"
+        android:layout_below="@id/passwordAgainEditText"
         android:layout_marginTop="24dp"
         android:layout_centerHorizontal="true"
         >

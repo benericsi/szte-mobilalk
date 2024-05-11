@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            />
+
+        <TextView
+            android:id="@+id/itemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemImage"
+            android:padding="8dp"
+            android:text="@string/item_placeholder"
+            android:textColor="?android:textColorSecondary"
+            />
+        
+        <RatingBar
+            android:id="@+id/itemRating"
+            style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemTitle"
+            android:padding="8dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:layout_marginStart="8dp"
+            />
+
+        <TextView
+            android:id="@+id/itemDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemRating"
+            android:padding="8dp"
+            android:text="@string/item_info_placeholder"
+            />
+
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemDesc"
+            android:padding="8dp"
+            android:text="@string/item_price_placeholder"
+            android:textColor="@color/red"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:id="@+id/btnBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemPrice"
+            android:padding="8dp"
+            android:text="@string/btn_buy"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/black"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -22,7 +22,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class SignupActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class SignupActivity extends AppCompatActivity {
 
     private static final String PREFS_NAME = MainActivity.class.getPackage().toString();
     private static final int SECRET = 99;
@@ -33,8 +33,6 @@ public class SignupActivity extends AppCompatActivity implements AdapterView.OnI
     EditText emailET;
     EditText passwordET;
     EditText passwordAgainET;
-    EditText phoneET;
-    Spinner phoneSP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,8 +55,6 @@ public class SignupActivity extends AppCompatActivity implements AdapterView.OnI
         emailET = findViewById(R.id.emailEditText);
         passwordET = findViewById(R.id.passwordEditText);
         passwordAgainET = findViewById(R.id.passwordAgainEditText);
-        phoneET = findViewById(R.id.phoneEditText);
-        phoneSP = findViewById(R.id.phoneSpinner);
 
         preferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
         String email = preferences.getString("email", "");
@@ -67,11 +63,6 @@ public class SignupActivity extends AppCompatActivity implements AdapterView.OnI
         emailET.setText(email);
         passwordET.setText(password);
         passwordAgainET.setText(password);
-
-        phoneSP.setOnItemSelectedListener(this);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.phoneModes, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        phoneSP.setAdapter(adapter);
 
         mAuth = FirebaseAuth.getInstance();
     }
@@ -106,9 +97,6 @@ public class SignupActivity extends AppCompatActivity implements AdapterView.OnI
         String email = emailET.getText().toString();
         String password = passwordET.getText().toString();
         String passwordAgain = passwordAgainET.getText().toString();
-        String phone = phoneET.getText().toString();
-        String phoneMode = phoneSP.getSelectedItem().toString();
-
         if (userName.isEmpty()) {
             userNameET.setError("A felhasználónév nem lehet üres");
             return;
@@ -156,13 +144,4 @@ public class SignupActivity extends AppCompatActivity implements AdapterView.OnI
         Intent intent = new Intent(this, ShopListActivity.class);
         startActivity(intent);
     }
-
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        String phoneMode = parent.getItemAtPosition(position).toString();
-        phoneET.setHint("Telefonszám (" + phoneMode + ")");
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {}
 }
