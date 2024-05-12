@@ -112,7 +112,6 @@ public class ShopListActivity extends AppCompatActivity{
     private void queryData() {
         mItemList.clear();
 
-        // mItems.whereEqualTo()
         mItems.orderBy("cartQuantity", Query.Direction.DESCENDING).limit(queryLimit).get().addOnSuccessListener(queryDocumentSnapshots -> {
             for (QueryDocumentSnapshot document : queryDocumentSnapshots) {
                 ShoppingItem item = document.toObject(ShoppingItem.class);
@@ -191,9 +190,7 @@ public class ShopListActivity extends AppCompatActivity{
             FirebaseAuth.getInstance().signOut();
             finish();
             return true;
-        } else if (item.getItemId() == R.id.setting_button) {
-            return true;
-        } else if (item.getItemId() == R.id.cart) {
+        }  else if (item.getItemId() == R.id.cart) {
             return true;
         } else if (item.getItemId() == R.id.view_selector) {
             if (viewRow) {
