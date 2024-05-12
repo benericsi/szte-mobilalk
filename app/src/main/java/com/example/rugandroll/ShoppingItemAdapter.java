@@ -110,10 +110,6 @@ public class ShoppingItemAdapter extends RecyclerView.Adapter<ShoppingItemAdapte
             mPriceText = itemView.findViewById(R.id.itemPrice);
             mItemImage = itemView.findViewById(R.id.itemImage);
             mRatingBar = itemView.findViewById(R.id.itemRating);
-
-            itemView.findViewById(R.id.btnBuy).setOnClickListener(v -> {
-                ((ShopListActivity) mContext).updateCartCount();
-            });
         }
 
         public void bindTo(ShoppingItem currentItem) {
@@ -124,6 +120,14 @@ public class ShoppingItemAdapter extends RecyclerView.Adapter<ShoppingItemAdapte
             mItemImage.setImageResource(currentItem.getImageResource());
 
             Glide.with(mContext).load(currentItem.getImageResource()).into(mItemImage);
+
+            itemView.findViewById(R.id.btnBuy).setOnClickListener(v -> {
+                ((ShopListActivity) mContext).updateCartCount(currentItem);
+            });
+
+            itemView.findViewById(R.id.btnDelete).setOnClickListener(v -> {
+                ((ShopListActivity) mContext).deleteItem(currentItem);
+            });
         }
     }
 }

@@ -31,7 +31,7 @@
             android:layout_height="14dp"
             android:layout_gravity="top|end"
             android:background="@drawable/circle"
-
+            android:visibility="gone"
             tools:visibility="visible">
 
             <TextView

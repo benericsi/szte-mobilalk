@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -42,6 +44,13 @@ public class MainActivity extends AppCompatActivity {
 
         emailET = findViewById(R.id.editTextEmail);
         passwordET = findViewById(R.id.editTextPassword);
+
+        Animation fadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in);
+        emailET.startAnimation(fadeIn);
+        passwordET.startAnimation(fadeIn);
+        findViewById(R.id.loginButton).startAnimation(fadeIn);
+        findViewById(R.id.guestButton).startAnimation(fadeIn);
+        findViewById(R.id.singupButton).startAnimation(fadeIn);
 
         preferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
 

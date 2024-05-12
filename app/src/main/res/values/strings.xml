@@ -12,30 +12,71 @@
     <string name="item_info_placeholder">Leírás</string>
     <string name="item_price_placeholder">99999</string>
     <string name="btn_buy">Kosárba</string>
+    <string name="btn_delete">Eltávolítás</string>
 
     <string-array name="shopping_item_names">
         <item>CONCRETE S Modern 80 x 200 cm</item>
         <item>CHIC Rusty L Vintage 160 x 230 cm</item>
+        <item>UNIQUE J\'adore 160 x 230 cm </item>
+        <item>MARMOR L Modern 160 x 230 cm </item>
+        <item>Illusion Blue Grey L 160 x 230 cm</item>
+        <item>Flores Blue 160 x 230 cm </item>
+        <item>BOTEH Ruby XS 80 x 150 cm </item>
+        <item>Tiffany Black L 160 x 230 cm </item>
+        <item>QUERRY szürke 200 x 300 cm </item>
+        <item>Luna Midnight 200cm </item>
     </string-array>
 
     <string-array name="shopping_item_desc">
         <item>szürke-sárga Absztrakt mintás futószőnyeg</item>
         <item>szürke-narancs Antikolt mintás szőnyeg</item>
+        <item>egyedi nyomtatású, szennytaszító felületkezelésű szőnyeg</item>
+        <item>világoskék-sötétkék Absztrakt mintás szőnyeg </item>
+        <item>kékesszürke vintage mintás szőnyeg</item>
+        <item>színes absztrakt mintás, puha felületű, kézi csomózású prémium szőnyeg</item>
+        <item>keleti perzsamintás piros szőnyeg</item>
+        <item>fekete-bézs geometriai mintás szőnyeg </item>
+        <item>márványmintás, kézi csomózású prémium szőnyeg </item>
+        <item>sötétszürke selymes felületű, kézi csomózású prémium rojtos kerek szőnyeg</item>
     </string-array>
 
     <string-array name="shopping_item_prices">
-        <item>39400 Ft</item>
-        <item>99400 Ft</item>
+        <item>39 400 Ft</item>
+        <item>99 400 Ft</item>
+        <item>198 000 Ft</item>
+        <item>74 400 Ft</item>
+        <item>99 400 Ft</item>
+        <item>287 600 Ft</item>
+        <item>36 400 Ft</item>
+        <item>139 600 Ft</item>
+        <item>493 600 Ft</item>
+        <item>213 600 Ft</item>
     </string-array>
 
     <array name="shopping_item_ratings">
         <item>4.5</item>
         <item>4.0</item>
+        <item>5.0</item>
+        <item>4.4</item>
+        <item>4.2</item>
+        <item>4.8</item>
+        <item>3.9</item>
+        <item>4.1</item>
+        <item>4.7</item>
+        <item>4.9</item>
     </array>
 
     <array name="shopping_item_images">
         <item>@drawable/concrete_s_80x200</item>
         <item>@drawable/chic_rusty_l_160x230</item>
+        <item>@drawable/unique_jadore_160x230</item>
+        <item>@drawable/marmor_l_160x230</item>
+        <item>@drawable/illusion_160x230</item>
+        <item>@drawable/flores_blue_160x230</item>
+        <item>@drawable/boteh_ruby_80x150</item>
+        <item>@drawable/tiffany_black_160x230</item>
+        <item>@drawable/querry_200x300</item>
+        <item>@drawable/luna_midnight_200</item>
     </array>
 
 </resources>
